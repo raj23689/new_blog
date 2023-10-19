@@ -8,7 +8,7 @@
   <figure class="relative mx-auto group">
     {#if site.author.avatar}
       <img
-        class="u-photo rounded-full shadow-xl hover:shadow-2xl transition-shadow z-10 w-24 h-24 md:w-32 md:h-32"
+        class="u-photo rounded-full shadow-xl hover:shadow-2xl transition-shadow z-10 w-30 h-30 md:w-32 md:h-32"
         src={site.author.avatar}
         alt={site.author.name} />
     {/if}
