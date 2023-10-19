@@ -27,13 +27,13 @@ export const site: SiteConfig = {
       {
         text: '@raj_kaze',
         icon: 'i-simple-icons-mastodon',
-        link: 'https://mastodon.social/@raj_kaze',
+        link: '#',
         rel: 'noopener noreferrer me'
       },
       {
         text: '@raj_kaze',
         icon: 'i-simple-icons-linkedin',
-        link: 'https://mastodon.social/@raj_kaze',
+        link: '#',
         rel: 'noopener noreferrer me'
       },
     ]
