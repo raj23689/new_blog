@@ -1,5 +1,10 @@
 import type { SiteConfig } from '$lib/types/site'
 
+const bio = [
+  "Hi, I’m <strong>Raj Majumdar</strong> A.K.A CodeKaze. As an ambitious Full-Stack Web Developer", 
+  "I have developed a profound understanding of HTML and CSS and JavaScript,enabling me to create innovative web solutions.", 
+  "On the back-end, I have honed my skills in Python and mastered the Django framework, ensuring seamless data communication between the front-end and server."
+]
 
 export const site: SiteConfig = {
   protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://',
@@ -9,10 +14,10 @@ export const site: SiteConfig = {
   lang: 'en-US',
   description: 'Powered by SvelteKit/Urara',
   author: {
-    avatar: '/assets/rak_photo_2023-10-19_15-33-12.jpg',
+    avatar: '/assets/any@512.png',
     name: 'Raj Majumdar',
     status: '🌸',
-    bio: 'A Passionate Full-Stack Dev',
+    bio: bio[~~(Math.random() * bio.length)],
     metadata: [
       {
         text: "Github",
@@ -24,7 +29,13 @@ export const site: SiteConfig = {
         icon: 'i-simple-icons-mastodon',
         link: 'https://mastodon.social/@raj_kaze',
         rel: 'noopener noreferrer me'
-      }
+      },
+      {
+        text: '@raj_kaze',
+        icon: 'i-simple-icons-linkedin',
+        link: 'https://mastodon.social/@raj_kaze',
+        rel: 'noopener noreferrer me'
+      },
     ]
   },
   themeColor: '#3D4451'
